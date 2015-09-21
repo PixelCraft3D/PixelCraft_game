@@ -4,11 +4,12 @@
 --
 
 local function give_initial_stuff(player)
-   minetest.chat_send_player(player:get_player_name(), "Welcome to Pixture!")
+   minetest.chat_send_player(player:get_player_name(), "Welcome to PixelCraft!")
    
    if minetest.setting_getbool("give_initial_stuff") then
       local inv=player:get_inventory()
 
+	  inv:add_item("main", "default:spear_stone")
       inv:add_item("main", "default:pick_stone")
       inv:add_item("main", "default:torch 10")
    end

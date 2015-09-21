@@ -66,8 +66,8 @@ function hunger.update_bar(player)
 	    text = "hunger.png",
 	    number = hunger.hunger[name],
 	    dir = 0,
-	    size = {x=16, y=16},
-	    offset = {x=64, y=-(48+24+16)},
+	    size = {x=24, y=24},
+	    offset = {x=16, y=-(48+24+24)},
 	 })
    end
 end
@@ -99,8 +99,8 @@ if minetest.setting_getbool("enable_damage") and minetest.setting_getbool("hunge
 	       text = "hunger.png^[colorize:#666666:255",
 	       number = 20,
 	       dir = 0,
-	       size = {x=16, y=16},
-	       offset = {x=64, y=-(48+24+16)},
+	       size = {x=24, y=24},
+	       offset = {x=16, y=-(48+24+24)},
 	    })
 	 
 	 hunger.update_bar(player)
